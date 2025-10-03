@@ -1,0 +1,60 @@
+/* BOM Challenge */
+body {
+    font-family: "Cairo", sans-serif;
+}
+.container {
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+}
+.container .form {
+    background-color: #e0e0e0;
+    margin:  20px auto;
+    max-width: 100%;
+    padding: 20px 10px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+}
+.container .form .input {
+    flex-basis: 75%;
+    max-width: 100%;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+.container .form .add {
+    flex-basis: 25%;
+    background-color: rgb(246, 66, 66);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.tasks {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    min-height: 90px;
+}
+
+/* New Element */
+.task {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.del {
+    background-color:rgb(246, 66, 66);
+    color: white;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}

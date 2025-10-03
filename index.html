@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+</head>
+<body>
+    <p class="owner">Owner : Seefo Al-salman</p>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .owner {
+        background-color: rgba(29, 80, 247, 0.753);
+        padding: 15px;
+        width: fit-content;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-radius: 10px;
+        margin: 20px 20px;
+        font-weight: 700;
+        color: whitesmoke;
+        transition: 0.5 linear all;
+        animation: move 10s infinite linear alternate;
+    }
+    @keyframes move {
+        0% {
+            background-color: #f44336;
+        }
+        25% {
+            background-color: rgba(29, 80, 247, 0.753);
+            bottom: 100px;
+            left: 100px;
+        }
+        50% {
+            background-color: greenyellow;
+            bottom: 0;
+            left: 200px;
+        }
+        75% {
+            background-color: gray;
+            bottom: 100px;
+            left: 300px;
+        }
+        100% {
+            background-color: gray;
+            bottom: 0;
+            left: 400px;
+        }
+    }
+    .container {
+        width: 500px;
+        margin: 20px auto;
+    }
+    .form {
+        background-color: #eee;
+        border-radius: 6px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        flex: 1;
+    }
+    .input:focus {
+        outline: none;
+    }
+    .add {
+        border: none;
+        background-color: #f44336;
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .tasks {
+        background-color: #eee;
+        margin-top: 20px;
+        border-radius: 6px;
+        padding: 20px;
+    }
+    .tasks .task {
+        background-color: white;
+        padding: 10px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid #ccc;
+    }
+    .tasks .task:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    .tasks .task:hover {
+        background-color: #f7f7f7;
+    }
+    .tasks .task.done {
+        opacity: 0.5;
+    }
+    .tasks .task span {
+        font-weight: bold;
+        font-size: 10px;
+        background-color: red;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="form">
+        <input type="text" class="input" />
+        <input type="submit" class="add" value="Add Task" />
+    </div>
+    <div class="tasks"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
